@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -17,14 +17,34 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- 高機能スライドライブラリ -->
+    <link rel="stylesheet" href="bxslider/jquery.bxslider.css">
+    <script src="js/jquery.min.js"/></script>
+    <script src="bxslider/jquery.bxSlider.js"></script>
+   <script>
+   $(document).ready(function(){
+   $('.bxslider').bxSlider();
+   });
+</script>
   </head>
         <script type="text/javascript">header();</script>
 
   <body>
-    <p><h3>coming soon.</h3></p>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+<center>
+
+<ul class="bxslider">
+<li><img src="./img/yuasa.PNG"></li>
+<li><img src="./img/tsuneoka.PNG"></li>
+<li><img src="./img/ikeda.PNG"></li>
+<li><img src="./img/sato.PNG"></li>
+<li><img src="./img/morisawa.PNG"></li>
+<li><img src="./img/yamamoto.PNG"></li>
+</ul>
+
+</center>
+    
   </body>
 </html>
