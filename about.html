@@ -17,11 +17,85 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>  
+	<!--自作CSS -->
+	<style type="text/css">
+.my-white{color: white;}
+.ugoku{id: hogehogehoge;}
+<!--
+	/*ここに調整CSS記述*/
+	.jumbotron { color: white; background:url(main.jpg) center no-repeat; background-size: cover;}
+	--></style>
+
+<script type="text/JavaScript">
+<!--
+// だんだん大きく１
+// Copyright(c)2001 Hikky: http://ww51.tiki.ne.jp/~hiro-e/hikky/
+// Last Modified: 02/07/2002
+
+/*
+body部分の＜div id="growgr1"＞～＜/div＞に大きさを変化させる文字を書いてください。 
+speedgr1=...は文字の大きさが変化するスピード（ミリ秒単位）で、
+maxsizegr1=...は文字の大きさの最大サイズ（ピクセル単位）です。お好みに応じて調節してください。
+*/
+
+speedgr1=100; // 大きさが変化するスピード
+maxsizegr1=40; // 文字の大きさの最大サイズ
+
+sizegr1=1;
+tgr1=0;
+function growLetgr1(){
+		obj=document.getElementById("growgr1");
+		if(document.all)
+		winWidth=document.body.clientWidth;
+		else if(document.getElementById)
+		winWidth=window.innerWidth;
+		chgStylegr1();
+}
+function chgStylegr1(){
+		obj.style.fontSize=sizegr1+"px";
+		obWidth=obj.offsetWidth;
+		x=winWidth/2-obWidth/2; // 文字が中央に表示する場合の位置（横方向）を算出
+		obj.style.left=x+"px";
+		sizegr1++;
+		if(sizegr1>maxsizegr1)
+		return;
+		clearTimeout(tgr1);
+		setTimeout("growLetgr1()",speedgr1);
+}
+if(document.getElementById)
+		window.onload=growLetgr1;
+//-->
+</script>
+
+<script src="escAway2.js" type="text/javascript"></script>
+
+  </head>
       <script type="text/javascript">header();</script>
 
-  <body>
-    <p><h3>coming soon.</h3></p>
+  <div class="jumbotron">
+		  <h1 class="my-white">&nbsp;Works</h1>
+		  <p class="my-white">&nbsp;&nbsp;&nbsp;by The Society of Computational Science of Art</p>
+  </div>
+
+  <body onload=escAwayDividing("hogehogehoge");>
+
+    <p><h3>A smoking rotot</h3></p>
+	<iframe class="center-block" width="560" height="315" src="https://www.youtube.com/embed/YgelPxAnW3Q?color=white" frameborder="0" allowfullscreen></iframe>
+    <div id="hogehogehoge"><h3>
+	Communication is  one of  methods to produce ideas and to make a discovery.
+	There are special communication groups in society (e.g. smoking area, coffee break).
+	Those groups are divided by several reasons such as location and constitution.
+	We propose to expand groups by using a Telexistence-robot.
+	The telexisitence-robot converts from a person's behavior out of smoking group to a smoking parson's behavior in the group.
+	People can do the better communication with tuning effect by using robot than using only sound and video.
+	We make a smoking telexistence robot.
+    </h3></div>
+	<p><h3> <br></h3></p>
+	<p><h3>Suikin system</h3></p>
+	<iframe class="center-block" width="560" height="315" src="https://www.youtube.com/embed/jyNQoVD_gos?color=white" frameborder="0" allowfullscreen></iframe>
+	<p><h3>
+			This research focuses on the relationship between music and pronunciation, which is one of music components. We predict speaker’s feelings by listening its voice. Impressive music are produced by combination of phonemes. Robert Plutchik interpreted that feelings can vectorize numerically. Then we expect that music generated from combined specific emotional voice is an impression evoking same emotion to listeners. Using music composed by multiple different feeling voice, this presentation contributes the study about creating impressive music.
+	</h3></p>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
