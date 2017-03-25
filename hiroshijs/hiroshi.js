@@ -37,7 +37,7 @@ function scream() {
     var audio = new Audio();
 
     // サウンドファイルまでの URL アドレスを指定
-    audio.src = "./hiroshijs/hiroshi2.wav";
+    audio.src = "./hiroshijs/hiroshi.wav";
 
     // 再生を開始する
     audio.play();
@@ -62,3 +62,10 @@ function forcedScroll(){
     // 音を流す
     scream();
 }
+
+/*
+  TODO
+   - 歩かせる
+   - スクロール時上に移動させる（？）
+   - 上スクロール終了フラグを位置を取るのではなく、
+*/
