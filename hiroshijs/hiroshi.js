@@ -9,7 +9,7 @@ function getScrollRatio() {
 // 発火
 function forcedScroll(){
     // 強制スクロール
-    $('html, body').animate({scrollTop:0}, 400); //slow, fast, or NNN
+    $('html, body').animate({scrollTop:0}, 400, 'swing'); //slow, fast, or NNN
 
     // ヒロシの画像を変更
     $('.hiroshi').html('<img src="./hiroshijs/hiroshi2.png" width="100">');
@@ -25,15 +25,14 @@ $(function(){
     $('.hiroshi').html('<img src="./hiroshijs/hiroshi1.png" width="100">');
 
     $(window).scroll(function(){
-        console.log(getScrollRatio());
         if ( getScrollRatio() > 0.8 ){
             forcedScroll();
         }
         if ( getScrollRatio() == 0 ){
+            $('html, body').stop();
             setTimeout(function(){
                 $('.hiroshi').html('<img src="./hiroshijs/hiroshi1.png" width="100">');
             },200);
         }
     });
 });
-
