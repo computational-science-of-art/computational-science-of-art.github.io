@@ -1,8 +1,14 @@
 
+// AudioElement を作成
+var audio = new Audio('');
+
 // main
 $(function(){
     // hiroshiの画像をプリロード（キャッシュに保存）する
     $("<img>").attr("src", "./hiroshijs/hiroshi2.png");
+
+    // hiroshiの音声をプリロード（キャッシュに保存）する
+    preloadSound();
     
     // hiroshi挿入
     $('body').append('<div class="hiroshi"></div>')
@@ -37,9 +43,6 @@ function scream() {
 }
 
 function preloadSound() {
-    // AudioElement を作成
-    var audio = new Audio('');
-
     // プリロードする設定
     audio.preload = "auto";
 
@@ -72,5 +75,5 @@ function forcedScroll(){
    - 歩かせる
    - スクロール時上に移動させる（？）
    - 上スクロール終了フラグを位置を取るのではなく、アニメーションの終了時に実行
-   - 
+   --- 現状の設定だとpriori3でバグった...
 */
