@@ -10,7 +10,7 @@ function header(){
     html += '          <span class="icon-bar"></span>';
     html += '<span class="icon-bar"></span>';
     html += '</button>';
-    html += '        <a class="navbar-brand" href="contact.html">The Society of Computational Science of Art</a>';
+    html += '        <a class="navbar-brand" href="index.html">The Society of Computational Science of Art</a>';
     html += '</div>';          
     html += '<!-- Collect the nav links, forms, and other content for toggling -->';
     html += '<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">';
@@ -30,5 +30,4 @@ function header(){
     html += '</div><!-- /.container-fluid -->';
     html += '</nav>';
    document.write(html);
-
 }
