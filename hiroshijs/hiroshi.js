@@ -31,16 +31,20 @@ $(function(){
 });
 
 // サウンド再生
-// TODO 音声ファイルのプリロード
 function scream() {
-    // AudioElement を作成
-    var audio = new Audio();
-
-    // サウンドファイルまでの URL アドレスを指定
-    audio.src = "./hiroshijs/hiroshi.wav";
-
     // 再生を開始する
     audio.play();
+}
+
+function preloadSound() {
+    // AudioElement を作成
+    var audio = new Audio('');
+
+    // プリロードする設定
+    audio.preload = "auto";
+
+    // パス指定（ここでプリロードされる）
+    audio.src = "./hiroshijs/hiroshi.wav";
 }
 
 // スクロール量の割合を取得
